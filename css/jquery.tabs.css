@@ -1,0 +1,8 @@
+* { margin:0; padding:0; }
+
+body { margin:10px; }
+.tabs { background:#ddd; overflow:auto; padding:3px 0 0 10px; }
+.tabs li { float:left; display:inline; font-size:12px; padding:4px 8px; }
+.tabs li.selected { background:#fff; }
+
+.tab { clear:both; display:none; padding:10px;}
