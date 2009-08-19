@@ -33,7 +33,7 @@ First of all, you need the following HTML code:
 
 As you can see, you link each item in the list with his tab using the href attribute of the link inside the list item.
 
-You also must add <code>class="selected"</code> to the item of the selected tab.
+You also must add `class="selected"` to the item of the selected tab.
 
 Then you must hide all the tabs with CSS
 
