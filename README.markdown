@@ -44,7 +44,7 @@ Then you must hide all the tabs with CSS
 And then you just call the plugin.
 
     <script>
-        $(.tabs).tabs();
+        $('.tabs').tabs();
     </script>
 
 The plugin will find the selected tab and show it.
