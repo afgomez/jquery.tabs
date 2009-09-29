@@ -17,7 +17,8 @@
     
     // Default params
     $.fn.tabs.defaults = {
-        selected_class: 'selected'
+        selected_class: 'selected',
+        trigger_on_visible: 'visible'
     };
     
     
@@ -80,7 +81,11 @@
                 $(this.selected_li).removeClass(this.opts.selected_class);
             };
             
-            $(tab).show();
+            var tab = $(tab);
+            tab.show();
+            if (this.opts.trigger_on_visible) {
+                tab.trigger(this.opts.trigger_on_visible);
+            }
             $(li).addClass(this.opts.selected_class);
             
             this.selected_tab = tab;
