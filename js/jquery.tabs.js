@@ -8,7 +8,7 @@
     
     
     $.fn.tabs = function(options) {
-        var opts = $.extend({}, options, $.fn.tabs.defaults);
+        var opts = $.extend({}, $.fn.tabs.defaults, options);
         return this.each(function() {
             new Tabs(this, opts);
         });
