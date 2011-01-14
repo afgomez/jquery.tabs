@@ -89,9 +89,11 @@
                     e.preventDefault();
                     that.show_tab(a.attr('href'), a.parent());
                 });
-                
                 // Show the selected item
-                if (a.parent().hasClass(that.opts.selected_class)) {
+                if (document.location.hash == a.attr('href')) {
+                    a.click();
+                    $(document).scrollTop(0);
+                } else if (a.parent().hasClass(that.opts.selected_class)) {
                     a.click();
                 }
                 
